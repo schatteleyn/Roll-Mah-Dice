@@ -17,3 +17,12 @@ function rollDice()
   
   }
 }
+
+var j=1;
+function addDice()
+{
+
+  j++;
+  document.getElementById('increment').innerHTML+="Type of dice "+j+": <span id='increment'></span><input type=\"text\" id=\"type\" /><br />";
+  document.getElementById('addRoll').innerHTML += "Number of roll, dice "+j+": <span id='addRoll'></span><input type=\"text\" id=\"number\" /><br />";
+}
