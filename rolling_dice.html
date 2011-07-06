@@ -9,13 +9,20 @@
 <style>
   article, aside, figure, footer, header, hgroup, 
   menu, nav, section { display: block; }
+  label { 
+    display: inline-block; 
+    width: 150px; 
+    margin-right: 10px; 
+    vertical-align: top; 
+    text-align: right; 
+}
 </style>
 </head>
 <body>
   <form id="form">
-    Type of dice 1: <input type="text" id="type" /><br />
-    <span id="increment"></span>
-    Number of roll, dice 1: <input type="text" id="number" /><br />
+    <label>Type of dice 1:</label> <input type="text" id="type" /><br />
+    <span id="addDice"></span>
+    <label>Number of roll, dice 1:</label> <input type="text" id="number" /><br />
     <span id="addRoll"></span>
     <input type="button" id="jet" value="I can haz mah dice roll'd ?" onclick="rollDice()" />
     <input type="button" id="add" value="add a dice" onclick="addDice()" />
